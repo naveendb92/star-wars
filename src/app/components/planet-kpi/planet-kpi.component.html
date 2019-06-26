@@ -1,0 +1,21 @@
+<mat-card
+  class="Planet-KPI"
+  [ngClass]="{ 'cursor-pointer': cursor }"
+  (click)="onClickPlanetTile($event, data)"
+>
+  <i
+    class="fa  fav"
+    id="fav"
+    [ngClass]="{
+      'fa-heart': data.favorite === true,
+      'fa-heart-o': data.favorite === undefined || data.favorite === false
+    }"
+  ></i>
+  <p class="Planet-KPI-Name">{{ data.name }}</p>
+  <p class="Planet-KPI-Films">
+    Films
+    <span class="font-weight-bold">
+      {{ data.films.length }}
+    </span>
+  </p>
+</mat-card>

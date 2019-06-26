@@ -1,0 +1,31 @@
+.Dashboard {
+  &-Title {
+    color: #145374;
+    text-transform: uppercase;
+  }
+  &-Favorite-Container {
+    width: 100%;
+  }
+
+  &-Favorite-Kpi {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .mat-badge-content {
+    background-color: #5588a3 !important;
+    color: #e8e8e8 !important;
+  }
+
+  &-Favorite-Searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 2rem;
+    font-size: 16px;
+    font-weight: bold;
+
+    .search-input {
+      font-size: 12px;
+    }
+  }
+}

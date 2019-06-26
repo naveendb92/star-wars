@@ -1,0 +1,20 @@
+<div class="Dashboard">
+  <div class="App-Header">
+    <app-header></app-header>
+  </div>
+
+  <div class="App-Body">
+    <mat-drawer-container class="Dashboard-Container h-100" autosize>
+      <mat-drawer #drawer class="Dashboard-Sidenav" mode="side" opened="true">
+        <app-sidebar></app-sidebar>
+      </mat-drawer>
+
+      <div class="Dashboard-Sidenav-Content">
+        <!-- <button type="button" mat-button (click)="drawer.toggle()">
+          Toggle sidenav
+        </button> -->
+        <!-- <app-favorite></app-favorite> -->
+      </div>
+    </mat-drawer-container>
+  </div>
+</div>

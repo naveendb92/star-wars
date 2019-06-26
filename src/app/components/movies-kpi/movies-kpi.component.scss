@@ -1,0 +1,31 @@
+.Movies-KPI {
+  position: relative;
+  background-color: #5588a3;
+  color: #e8e8e8;
+  box-shadow: none;
+  border-radius: 3px;
+
+  .fa {
+    position: absolute;
+    right: 15px;
+    top: 15%;
+    color: #145374;
+    font-size: 18px;
+  }
+
+  &-Name {
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  &-Info {
+    font-size: 12px;
+    margin-bottom: 5px !important;
+  }
+
+  &-Info-Value {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

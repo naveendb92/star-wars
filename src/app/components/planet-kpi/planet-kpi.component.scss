@@ -1,0 +1,26 @@
+@import "../../../sass/styles.scss";
+
+.Planet-KPI {
+  position: relative;
+  background-color: #5588a3;
+  color: #e8e8e8;
+  box-shadow: none;
+  border-radius: 3px;
+  // cursor: pointer;
+
+  .fav {
+    position: absolute;
+    right: 15px;
+    top: 15%;
+    // cursor: pointer;
+  }
+
+  &-Name {
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+  &-Films {
+    font-size: 14px;
+  }
+}

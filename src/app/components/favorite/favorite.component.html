@@ -1,0 +1,45 @@
+<div class="Dashboard">
+  <div class="App-Header">
+    <app-header></app-header>
+  </div>
+
+  <div class="App-Body">
+    <mat-drawer-container class="Dashboard-Container h-100" autosize>
+      <mat-drawer #drawer class="Dashboard-Sidenav" mode="side" opened="true">
+        <app-sidebar></app-sidebar>
+      </mat-drawer>
+
+      <div class="Dashboard-Sidenav-Content">
+        <div class="Dashboard-Favorite-Container">
+          <mat-toolbar class="Dashboard-Favorite-Searchbar">
+            <span
+              class="Dashboard-Title"
+              matBadge="{{
+                favoritesList === undefined ? '0' : favoritesList.length
+              }}"
+              matBadgeOverlap="false"
+            >
+              Favorites List
+            </span>
+          </mat-toolbar>
+
+          <div class="Dashboard-Favorite-Kpi">
+            <div>
+              <div class="row col-12 m-0">
+                <div
+                  class="col-12 col-sm-6 col-md-4 col-lg-3 p-2"
+                  *ngFor="let planet of favoritesList"
+                >
+                  <app-planet-kpi
+                    [data]="planet"
+                    [cursor]="false"
+                  ></app-planet-kpi>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-drawer-container>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<nav class="sidebar">
+  <div class="list-group">
+    <a
+      [routerLink]="['/planet']"
+      [routerLinkActive]="['router-link-active']"
+      class="list-group-item"
+      matTooltip="Asset Details"
+      matTooltipPosition="right"
+    >
+      <i class="fa fa-globe"></i> Planet
+    </a>
+    <a
+      [routerLink]="['/favorites']"
+      [routerLinkActive]="['router-link-active']"
+      class="list-group-item"
+      matTooltip="Sensor Data"
+      matTooltipPosition="right"
+    >
+      <i class="fa fa-heart"></i>
+      <!-- <span matBadge="{{ favCount }}" matBadgeOverlap="false">Favorites</span> -->
+      Favorites
+    </a>
+  </div>
+</nav>

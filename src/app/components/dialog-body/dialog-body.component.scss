@@ -1,0 +1,24 @@
+.dialog-header {
+  background-color: transparent !important;
+  font-size: 16px;
+
+  &-title {
+    color: #145374;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+.dialog-close {
+  padding: 0 14px;
+  cursor: pointer;
+}
+
+.dialog-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-dialog-container {
+  background-color: #e8e8e8;
+  padding-top: 0rem;
+}

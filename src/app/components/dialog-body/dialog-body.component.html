@@ -1,0 +1,28 @@
+<mat-toolbar class="dialog-header">
+  <mat-toolbar-row>
+    <span>
+      Movies List:
+      <span class="dialog-header-title">{{ planetData.name }}</span>
+    </span>
+    <span class="dialog-spacer"></span>
+    <mat-icon
+      class="dialog-close"
+      aria-hidden="false"
+      aria-label="Example heart icon"
+      (click)="close()"
+      >close</mat-icon
+    >
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-dialog-content>
+  <div class="row col-12 m-0">
+    <div
+      class="col-12 col-sm-6 col-md-4 col-lg-4 p-2"
+      *ngFor="let movie of planetData.films"
+    >
+      <app-movies-kpi [data]="movie"></app-movies-kpi>
+      <!-- <mat-card [innerHtml]="getMoviesInfo(movie)"> </mat-card> -->
+    </div>
+  </div>
+</mat-dialog-content>

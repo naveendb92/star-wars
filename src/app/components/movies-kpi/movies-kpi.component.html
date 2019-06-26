@@ -1,0 +1,20 @@
+<mat-card class="Movies-KPI" *ngIf="moviesInfo">
+  <i class="fa fa-film"></i>
+  <p class="Movies-KPI-Name">{{ moviesInfo.title }}</p>
+  <div class="col-12 p-0 row w-100 m-0 Movies-KPI-Info">
+    <div class="col-6 p-0">
+      Director :
+    </div>
+    <div class="col-6 p-0 Movies-KPI-Info-Value">
+      {{ moviesInfo.director }}
+    </div>
+  </div>
+  <div class="col-12 p-0 row w-100 m-0 Movies-KPI-Info">
+    <div class="col-6 p-0">
+      Release Date :
+    </div>
+    <div class="col-6 p-0 Movies-KPI-Info-Value">
+      {{ moviesInfo.release_date }}
+    </div>
+  </div>
+</mat-card>
