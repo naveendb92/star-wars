@@ -6,6 +6,21 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 http://naveendb92.5gbfree.com/#/planet
 
+# Application Information
+
+  This application is built using Angular 7, Angular-Material, SCSS, Bootstrap 4.
+  
+  Color Palette used: https://colorhunt.co/palette/144191
+  
+  ##  Entire Application is built using the following commands:
+  1. ng new star-wars --style=scss
+  2. npm install --save bootstrap jquery popper.js
+  3. ng g component components/dashboard (component creation: creates dashboard component inside components folder)
+  4. npm install --save @angular/material @angular/cdk @angular/animations
+  5. npm install --save hammerjs
+  6. ng generate service data
+  7. npm install --save font-awesome
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
