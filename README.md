@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
 
-# Demo
+# Demo Link
 
   https://naveendb92.github.io/star-wars/#/planet
 
@@ -12,7 +12,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   
   Color Palette used: https://colorhunt.co/palette/144191
   
-##  Entire Application is built using the following commands:
+##  Entire Application is built using the following commands
   * ng new star-wars --style=scss
   * npm install --save bootstrap jquery popper.js
   * ng g component components/dashboard (component creation: creates dashboard component inside components folder)
@@ -32,7 +32,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   1.  Run the command `ng build --prod --output-path docs --base-href /<project_name>/` which creates `docs` folder in your applicaion root path. 
   2.  Inside docs folder, copy `index.html` and paste in the same folder (docs) and rename it to `404.html`.
   3. Commit all the changes and push the code to GitHub.
-  4. Go to GitHub -> Your Application -> Settings (top right corner) -> scroll down and find `GitHub Pages`. <kbd>↩</kbd>
+  4. Go to GitHub -> Your Application -> Settings (top right corner) -> scroll down and find `GitHub Pages`. <kbd>↓</kbd>
   5. From the `Source` dropdown, select `master branch/docs folder`.
   6. It creates a application link.
 
