@@ -11,6 +11,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   This application is built using Angular 7, Angular-Material, SCSS, Bootstrap 4.
   
   Color Palette used: https://colorhunt.co/palette/144191
+  Data Fetch API: https://swapi.co/api/planets/
   
 ##  Entire Application is built using the following commands
   * ___ng new star-wars --style=scss___
