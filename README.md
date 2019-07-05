@@ -14,14 +14,14 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   
 ##  Entire Application is built using the following commands
   * ___ng new star-wars --style=scss___
-  * __npm install --save bootstrap jquery popper.js__
-  * __ng g component components/dashboard__ (component creation: creates dashboard component inside components folder)
-  * __npm install --save @angular/material @angular/cdk @angular/animations__
-  * __npm install --save hammerjs__
-  * __ng generate service services/data__
-  * __ng generate service services/count__
+  * ___npm install --save bootstrap jquery popper.js___
+  * ___ng g component components/dashboard___ (component creation: creates dashboard component inside components folder)
+  * ___npm install --save @angular/material @angular/cdk @angular/animations___
+  * ___npm install --save hammerjs___
+  * ___ng generate service services/data___
+  * ___ng generate service services/count___
   `(contains a variable which is a subjectBehavior and made as observable so that the changes to the variable can be observed/monitored from anywhere in the application)`
-  * __npm install --save font-awesome__
+  * __npm install --save font-awesome___
 
 ## Development Server
 
