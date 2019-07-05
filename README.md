@@ -6,11 +6,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
   https://naveendb92.github.io/star-wars/#/planet
   
-  ```diff
-+ https://naveendb92.github.io/star-wars/#/planet
-- https://naveendb92.github.io/star-wars/#/planet
-```
-
 ## Application Information
 
   This application is built using Angular 7, Angular-Material, SCSS, Bootstrap 4.
