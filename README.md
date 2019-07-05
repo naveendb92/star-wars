@@ -42,7 +42,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Project Build
 
-"ng build --prod"
+> _"ng build --prod"_
 
 
 ## Further help
