@@ -51,4 +51,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ### Markdown Cheatsheet
   > * https://github.com/tchapi/markdown-cheatsheet/blob/master/README.md
-  * https://www.webfx.com/tools/emoji-cheat-sheet/
+  > * https://www.webfx.com/tools/emoji-cheat-sheet/
