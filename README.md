@@ -5,6 +5,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 # Demo Link
 
   https://naveendb92.github.io/star-wars/#/planet
+  
+  ```diff
++ https://naveendb92.github.io/star-wars/#/planet
+- https://naveendb92.github.io/star-wars/#/planet
+```
 
 ## Application Information
 
