@@ -20,7 +20,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   5. npm install --save hammerjs
   6. ng generate service services/data
   7. ng generate service services/count
-  (contains a variable which is a subjectBehavior and made as observable so that the changes to the variable can be observed/monitored from anywhere in the application)
+  `(contains a variable which is a subjectBehavior and made as observable so that the changes to the variable can be observed/monitored from anywhere in the application)`
   8. npm install --save font-awesome
 
 ## Development server
