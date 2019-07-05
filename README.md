@@ -13,15 +13,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   Color Palette used: https://colorhunt.co/palette/144191
   
 ##  Entire Application is built using the following commands:
-  1. ng new star-wars --style=scss
-  2. npm install --save bootstrap jquery popper.js
-  3. ng g component components/dashboard (component creation: creates dashboard component inside components folder)
-  4. npm install --save @angular/material @angular/cdk @angular/animations
-  5. npm install --save hammerjs
-  6. ng generate service services/data
-  7. ng generate service services/count
+  * ng new star-wars --style=scss
+  * npm install --save bootstrap jquery popper.js
+  * ng g component components/dashboard (component creation: creates dashboard component inside components folder)
+  * npm install --save @angular/material @angular/cdk @angular/animations
+  * npm install --save hammerjs
+  * ng generate service services/data
+  * ng generate service services/count
   `(contains a variable which is a subjectBehavior and made as observable so that the changes to the variable can be observed/monitored from anywhere in the application)`
-  8. npm install --save font-awesome
+  * npm install --save font-awesome
 
 ## Development server
 
