@@ -20,7 +20,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   5. npm install --save hammerjs
   6. ng generate service data
   7. npm install --save font-awesome
-  8. `ng build --prod --output-path docs --base-href /star-wars/`
 
 ## Development server
 
