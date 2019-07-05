@@ -1,4 +1,4 @@
-# StarWars
+# StarWars Application
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
 
@@ -23,7 +23,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   `(contains a variable which is a subjectBehavior and made as observable so that the changes to the variable can be observed/monitored from anywhere in the application)`
   * npm install --save font-awesome
 
-## Development server
+## Development Server
 
  > Run `ng serve` and navigate to `http://localhost:4200/`. Or run `ng serve --open` which automatically open the browser and runs the application. Also the app will automcatically detect if any changes and reloads the application.
  
