@@ -15,7 +15,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ##  Entire Application is built using the following commands
   * ___ng new star-wars --style=scss___
   * ___npm install --save bootstrap jquery popper.js___
-  * ___ng g component components/dashboard___ (component creation: creates dashboard component inside components folder)
+  * ___ng g component components/dashboard___ `(component creation: creates dashboard component inside components folder)`
   * ___npm install --save @angular/material @angular/cdk @angular/animations___
   * ___npm install --save hammerjs___
   * ___ng generate service services/data___
