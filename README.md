@@ -25,13 +25,20 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Development server
 
  Run `ng serve` and navigate to `http://localhost:4200/`. Or run `ng serve --open` which automatically open the browser and runs the application. Also the app will automcatically detect if any changes and reloads the application.
+ 
+## Deployment to GitHub Page
 
+  1.  Run the command `ng build --prod --output-path docs --base-href /star-wars/` which creates `docs` folder. 
+  2.  Inside docs folder, copy `index.html` and paste in the same folder (docs) and rename it to `404.html`.
+  3. Commit all the changes and push the code to GitHub.
+  4. Go to GitHub -> Your Application -> Settings (top right corner) -> scroll down and find `GitHub Pages`
+  5. From the `Source` folder, select `master branch/docs folder`.
 
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Project Build
 
 "ng build --prod"
 
