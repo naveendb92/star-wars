@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # Demo
 
-http://naveendb92.5gbfree.com/#/planet
+  https://naveendb92.github.io/star-wars/#/planet
 
 # Application Information
 
@@ -20,6 +20,7 @@ http://naveendb92.5gbfree.com/#/planet
   5. npm install --save hammerjs
   6. ng generate service data
   7. npm install --save font-awesome
+  8. ng build --prod --output-path docs --base-href /star-wars/
 
 ## Development server
 
