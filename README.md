@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
 
-# ⇥ Demo Link
+# Demo Link
 
   https://naveendb92.github.io/star-wars/#/planet
 
