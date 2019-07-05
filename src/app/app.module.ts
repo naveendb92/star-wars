@@ -13,9 +13,10 @@ import { HeaderComponent } from "./components/header/header.component";
 import { PlanetComponent } from "./components/planet/planet.component";
 import { FavoriteComponent } from "./components/favorite/favorite.component";
 import { DataService } from "./services/data.service";
+import { CountService } from "./services/count.service";
 import { PlanetKpiComponent } from "./components/planet-kpi/planet-kpi.component";
 import { DialogBodyComponent } from "./components/dialog-body/dialog-body.component";
-import { MoviesKpiComponent } from './components/movies-kpi/movies-kpi.component';
+import { MoviesKpiComponent } from "./components/movies-kpi/movies-kpi.component";
 
 @NgModule({
   declarations: [
@@ -37,7 +38,7 @@ import { MoviesKpiComponent } from './components/movies-kpi/movies-kpi.component
     MaterialModule,
     FormsModule
   ],
-  providers: [DataService],
+  providers: [DataService, CountService],
   bootstrap: [AppComponent],
   entryComponents: [DialogBodyComponent]
 })

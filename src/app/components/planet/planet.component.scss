@@ -11,6 +11,21 @@
     padding: 0.75rem 0.5rem;
   }
 
+  &-ClearFav {
+    margin: 0 2rem;
+    cursor: pointer;
+    color: #5588a3;
+    border: 1px solid #5588a3;
+    border-radius: 50px;
+    padding: 0.35rem;
+    font-size: 14px;
+  }
+
+  &-ClearFav:hover {
+    color: #145374;
+    border: 1px solid #145374;
+  }
+
   &-Planet-Searchbar {
     display: flex;
     align-items: center;
@@ -23,4 +38,8 @@
       font-size: 12px;
     }
   }
+}
+
+.example-spacer {
+  flex: 1 1 auto;
 }

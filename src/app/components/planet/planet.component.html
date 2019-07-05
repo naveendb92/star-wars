@@ -12,7 +12,35 @@
       <div class="Dashboard-Sidenav-Content">
         <div class="Dashboard-Planet-Container">
           <mat-toolbar class="Dashboard-Planet-Searchbar">
-            <span class="Dashboard-Title">Planet List</span>
+            <mat-toolbar-row>
+              <span class="Dashboard-Title">Planet List</span>
+              <span class="example-spacer"></span>
+              <i
+                class="fa fa-eraser Dashboard-ClearFav"
+                matTooltip="Clear Favorites"
+                (click)="clearFav()"
+              ></i>
+              <mat-form-field class="search-input">
+                <input
+                  matInput
+                  type="text"
+                  placeholder="Search Planet By Name"
+                  [(ngModel)]="searchTerm"
+                />
+                <button
+                  mat-button
+                  *ngIf="searchTerm"
+                  matSuffix
+                  mat-icon-button
+                  aria-label="Clear"
+                  (click)="searchTerm = ''"
+                >
+                  <mat-icon>close</mat-icon>
+                </button>
+              </mat-form-field>
+            </mat-toolbar-row>
+
+            <!-- <span class="Dashboard-Title">Planet List</span>
             <mat-form-field class="search-input">
               <input
                 matInput
@@ -30,7 +58,7 @@
               >
                 <mat-icon>close</mat-icon>
               </button>
-            </mat-form-field>
+            </mat-form-field> -->
           </mat-toolbar>
 
           <div class="Dashboard-Planet-Kpi">

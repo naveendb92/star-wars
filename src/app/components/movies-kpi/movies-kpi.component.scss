@@ -23,6 +23,12 @@
     margin-bottom: 5px !important;
   }
 
+  &-Info-Key {
+    display: flex;
+    color: #145374;
+    font-weight: bold;
+  }
+
   &-Info-Value {
     white-space: nowrap;
     overflow: hidden;

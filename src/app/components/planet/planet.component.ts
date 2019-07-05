@@ -1,8 +1,8 @@
 import { Component, OnInit } from "@angular/core";
 import { DataService } from "../../services/data.service";
 import { MatDialog, MatDialogConfig } from "@angular/material";
-// import { DialogBodyComponent } from "./components/dialog-body/dialog-body.component";
 import { DialogBodyComponent } from "../dialog-body/dialog-body.component";
+import { CountService } from "../../services/count.service";
 
 @Component({
   selector: "app-planet",
@@ -18,7 +18,8 @@ export class PlanetComponent implements OnInit {
 
   constructor(
     private UtilitityService: DataService,
-    private dialog: MatDialog
+    private dialog: MatDialog,
+    private countService: CountService
   ) {}
 
   private _searchTerm: string;
@@ -43,6 +44,12 @@ export class PlanetComponent implements OnInit {
         alert("No Data to Display");
       }
     );
+  }
+
+  clearFav() {
+    localStorage.clear();
+    this.countService.editUser(0);
+    this.loadPlanetsData();
   }
 
   ngOnInit() {
@@ -89,6 +96,7 @@ export class PlanetComponent implements OnInit {
       this.favObj[data.name] = data;
       localStorage.setItem("favObj", JSON.stringify(this.favObj));
       this.setFavFlag();
+      this.countService.editUser(1);
     } else {
       if (list[data.name] !== undefined) {
         delete list[data.name];
@@ -99,6 +107,7 @@ export class PlanetComponent implements OnInit {
         localStorage.setItem("favObj", JSON.stringify(list));
         this.setFavFlag();
       }
+      this.countService.editUser(list);
     }
   }
 
