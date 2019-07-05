@@ -13,7 +13,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   Color Palette used: https://colorhunt.co/palette/144191
   
 ##  Entire Application is built using the following commands
-  * ng new star-wars --style=scss
+  * __ng new star-wars --style=scss__
   * npm install --save bootstrap jquery popper.js
   * ng g component components/dashboard (component creation: creates dashboard component inside components folder)
   * npm install --save @angular/material @angular/cdk @angular/animations
