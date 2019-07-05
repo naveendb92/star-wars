@@ -36,9 +36,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   5. From the `Source` dropdown, select `master branch/docs folder`.
   6. It creates a application link.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Project Build
 
