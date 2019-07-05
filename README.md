@@ -2,11 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
 
-## Demo Link
+# Demo Link
 
   https://naveendb92.github.io/star-wars/#/planet
 
-### Application Information
+## Application Information
 
   This application is built using Angular 7, Angular-Material, SCSS, Bootstrap 4.
   
@@ -29,7 +29,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
  
 ## Deployment of Application to GitHub Page
 
-  1.  Run the command `ng build --prod --output-path docs --base-href /<project_name>/` which creates `docs` folder in your applicaion root path. 
+  1.  Run the command `**ng build --prod --output-path docs --base-href /<project_name>/**` which creates `docs` folder in your applicaion root path. 
   2.  Inside docs folder, copy `index.html` and paste in the same folder (docs) and rename it to `404.html`.
   3. Commit all the changes and push the code to GitHub.
   4. Go to GitHub -> Your Application -> Settings (top right corner) -> scroll down and find `GitHub Pages`. <kbd>↓</kbd>
