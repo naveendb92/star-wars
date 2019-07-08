@@ -7,9 +7,10 @@ import { CountService } from "../../services/count.service";
   styleUrls: ["./sidebar.component.scss"]
 })
 export class SidebarComponent implements OnInit {
-  constructor(private countService: CountService) {}
   favCount: any;
   count: number;
+
+  constructor(private countService: CountService) {}
 
   ngOnInit() {
     this.countService.cast.subscribe(res => {

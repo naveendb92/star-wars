@@ -1,7 +1,9 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
-import { HttpClientModule } from "@angular/common/http";
+import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
 import { FormsModule } from "@angular/forms";
+import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
+import { LoaderInterceptor } from "./interceptors/loader.interceptor";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -14,9 +16,11 @@ import { PlanetComponent } from "./components/planet/planet.component";
 import { FavoriteComponent } from "./components/favorite/favorite.component";
 import { DataService } from "./services/data.service";
 import { CountService } from "./services/count.service";
+import { LoaderService } from "./services/loader.service";
 import { PlanetKpiComponent } from "./components/planet-kpi/planet-kpi.component";
 import { DialogBodyComponent } from "./components/dialog-body/dialog-body.component";
 import { MoviesKpiComponent } from "./components/movies-kpi/movies-kpi.component";
+import { LoaderComponent } from "./components/shared/loader/loader.component";
 
 @NgModule({
   declarations: [
@@ -28,7 +32,8 @@ import { MoviesKpiComponent } from "./components/movies-kpi/movies-kpi.component
     FavoriteComponent,
     PlanetKpiComponent,
     DialogBodyComponent,
-    MoviesKpiComponent
+    MoviesKpiComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
@@ -36,9 +41,15 @@ import { MoviesKpiComponent } from "./components/movies-kpi/movies-kpi.component
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FormsModule
+    FormsModule,
+    MatProgressSpinnerModule
   ],
-  providers: [DataService, CountService],
+  providers: [
+    DataService,
+    CountService,
+    LoaderService,
+    { provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true }
+  ],
   bootstrap: [AppComponent],
   entryComponents: [DialogBodyComponent]
 })
