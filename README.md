@@ -1,46 +1,53 @@
-# StarWars
+# The StarWars Application :boom:
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
 
-# Demo
+# Demo Link
 
-http://naveendb92.5gbfree.com/#/planet
-
-# Application Information
+  https://naveendb92.github.io/star-wars/#/planet
+  
+## Application Information
 
   This application is built using Angular 7, Angular-Material, SCSS, Bootstrap 4.
   
-  Color Palette used: https://colorhunt.co/palette/144191
+  * Color Palette used: https://colorhunt.co/palette/144191
+  * Data Fetch API: https://swapi.co/api/planets/
   
-  ##  Entire Application is built using the following commands:
-  1. ng new star-wars --style=scss
-  2. npm install --save bootstrap jquery popper.js
-  3. ng g component components/dashboard (component creation: creates dashboard component inside components folder)
-  4. npm install --save @angular/material @angular/cdk @angular/animations
-  5. npm install --save hammerjs
-  6. ng generate service data
-  7. npm install --save font-awesome
+##  Entire Application is built using the following commands
+  * ___ng new star-wars --style=scss___
+  * ___npm install --save bootstrap jquery popper.js___
+  * ___ng g component components/dashboard___ `(component creation: creates dashboard component inside components folder)`
+  * ___npm install --save @angular/material @angular/cdk @angular/animations___
+  * ___npm install --save hammerjs___
+  * ___ng generate service services/data___
+  * ___ng generate service services/count___
+  `(contains a variable which is a subjectBehavior and made as observable so that the changes to the variable can be observed/monitored from anywhere in the application)`
+  * __npm install --save font-awesome___
 
-## Development server
+## Development Server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+  Run `ng serve` and navigate to `http://localhost:4200/`. Or run `ng serve --open` which automatically open the browser and runs the application. Also the app will automcatically detect if any changes and reloads the application.
+ 
+## Deployment of Application to GitHub Page
 
-## Code scaffolding
+  1.  Run the command **`ng build --prod --output-path docs --base-href /<project_name>/`** which creates `docs` folder in your applicaion root path. 
+  2.  Inside docs folder, copy `index.html` and paste in the same folder (docs) and rename it to `404.html`.
+  3. Commit all the changes and push the code to GitHub.
+  4. Go to GitHub -> Your Application -> Settings (top right corner) -> scroll down and find `GitHub Pages`. <kbd>↓</kbd>
+  5. From the `Source` dropdown, select `master branch/docs folder`.
+  6. It creates a application link.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Project Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+  _"ng build --prod"_
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+- - - -
+> #### Markdown Cheatsheet ####
+  > * https://github.com/tchapi/markdown-cheatsheet/blob/master/README.md
+  > * https://www.webfx.com/tools/emoji-cheat-sheet/
