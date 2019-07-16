@@ -1,5 +1,9 @@
 @import "../../../sass/styles.scss";
 
+* {
+  transition: all 0.32s ease;
+}
+
 .Planet-KPI {
   position: relative;
   background-color: #5588a3;
@@ -11,6 +15,10 @@
     position: absolute;
     right: 15px;
     top: 15%;
+  }
+
+  .fav:active {
+    transform: scale(0.93, 0.93) translateY(2px);
   }
 
   .fa-heart {
